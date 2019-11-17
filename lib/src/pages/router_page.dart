@@ -1,8 +1,8 @@
-import 'package:chat_app/src/pages/profile.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:chat_app/src/pages/home.dart';
-import 'package:chat_app/src/pages/login.dart';
+
 
 class RouterPage extends StatefulWidget {
   RouterPage({Key key}) : super(key: key);
@@ -23,8 +23,7 @@ class _RouterPageState extends State<RouterPage> {
     Widget _callPage(int currentPage ) {
     switch(currentPage) {
       case 0 : return HomePage();
-      case 1 : return ProfilePage();
-      case 2 : return LoginPage();
+
       default: 
                 return HomePage();
     }
